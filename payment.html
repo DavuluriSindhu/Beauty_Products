@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Munni's Beauty Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Munni's Beauty Products</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-section">
+            <div class="container">
+                <h1>Checkout</h1>
+                
+                <div class="checkout-container">
+                    <div class="checkout-form">
+                        <form id="checkout-form">
+                            <div class="form-section">
+                                <h2>Delivery Information</h2>
+                                
+                                <div class="form-group">
+                                    <label for="full-name">Full Name *</label>
+                                    <input type="text" id="full-name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="address">Delivery Address *</label>
+                                    <textarea id="address" rows="3" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="delivery-area">Delivery Area *</label>
+                                    <select id="delivery-area" required>
+                                        <option value="">Select Area</option>
+                                        <option value="area1">Connaught Place</option>
+                                        <option value="area2">Karol Bagh</option>
+                                        <option value="area3">Lajpat Nagar</option>
+                                        <option value="area4">Dwarka</option>
+                                        <option value="area5">Rohini</option>
+                                        <option value="area6">Saket</option>
+                                        <option value="area7">Vasant Kunj</option>
+                                        <option value="area8">Nehru Place</option>
+                                        <option value="area9">Janakpuri</option>
+                                        <option value="area10">Pitampura</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h2>Payment Method</h2>
+                                
+                                <div class="payment-methods">
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="cod" checked>
+                                        <span class="payment-label">
+                                            <strong>Cash on Delivery</strong>
+                                            <small>Pay when you receive your order</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="upi">
+                                        <span class="payment-label">
+                                            <strong>UPI Payment</strong>
+                                            <small>PhonePe, Google Pay, Paytm</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="card">
+                                        <span class="payment-label">
+                                            <strong>Credit/Debit Card</strong>
+                                            <small>Visa, Mastercard, Rupay</small>
+                                        </span>
+                                    </label>
+
+                                    <label class="payment-option">
+                                        <input type="radio" name="payment" value="netbanking">
+                                        <span class="payment-label">
+                                            <strong>Net Banking</strong>
+                                            <small>All major banks</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-full">Place Order</button>
+                        </form>
+                    </div>
+
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div id="checkout-items">
+                            <!-- Items will be loaded by JavaScript -->
+                        </div>
+                        <div class="summary-totals">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="checkout-subtotal">₹0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Delivery Fee:</span>
+                                <span id="checkout-delivery">₹50</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="checkout-total">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Munni's Beauty Products. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
