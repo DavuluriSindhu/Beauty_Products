@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success - Munni's Beauty Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Munni's Beauty Products</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-section">
+            <div class="container">
+                <div class="success-card">
+                    <div class="success-icon">✓</div>
+                    <h1>Order Placed Successfully!</h1>
+                    <p class="success-message">
+                        Thank you for shopping with Munni's Beauty Products. 
+                        Your order has been received and will be delivered soon.
+                    </p>
+                    
+                    <div class="order-details">
+                        <h2>Order Information</h2>
+                        <div class="order-info">
+                            <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+                            <p><strong>Order Total:</strong> <span id="order-total"></span></p>
+                            <p><strong>Delivery Address:</strong> <span id="order-address"></span></p>
+                            <p><strong>Payment Method:</strong> <span id="order-payment"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="success-actions">
+                        <a href="index.html" class="btn-primary">Back to Home</a>
+                        <a href="products.html" class="btn-secondary">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Munni's Beauty Products. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
